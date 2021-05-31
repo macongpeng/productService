@@ -21,7 +21,7 @@ jobs:
         image: postgres
         # Provide the password for postgres
         env:
-          POSTGRES_USER: test
+          POSTGRES_USER: dbuser
           POSTGRES_PASSWORD: password
         # Set health checks to wait until postgres has started
         options: >-
