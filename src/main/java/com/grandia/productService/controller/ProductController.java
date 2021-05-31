@@ -1,5 +1,6 @@
-package com.grandia.productService;
+package com.grandia.productService.controller;
 
+import com.grandia.productService.domain.Product;
 import com.grandia.productService.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

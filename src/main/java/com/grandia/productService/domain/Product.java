@@ -1,4 +1,4 @@
-package com.grandia.productService;
+package com.grandia.productService.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
