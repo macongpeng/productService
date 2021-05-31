@@ -40,5 +40,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Create database
+      run: |
+        PGPASSWORD=password psql -U dbuser -tc "SELECT 'CREATE DATABASE products_db' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'products_db')"
     - name: Build with Maven
       run: mvn -B package --file pom.xml
